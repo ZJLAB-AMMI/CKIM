@@ -25,40 +25,44 @@ h5py==2.10.0
 
 
 ## Dataset and pre-process
-Downloading the [CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/)
+Please download the [CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/) and move image files to ```/Data```.  
+The annotations suitable for training object detection models can be found in ```/Data```.
+
 
 
 ## CKIM learning
-
+You can derive CKIM with crisp and fuzzy implementations as follows: 
 1. Run ```python /CKIM_generation/crisp_rule.py ``` for crisp-CKIM generation. The parameters of obtained rules are saved in crisp_rule.txt.  
 2. Run ```python /CKIM_generation/fuzzy_rule.py ``` for fuzzy-CKIM generation. The parameters of obtained rules are saved in fuzzy_rule.txt.  
 
-Parameters:
-
 
 ## Training 
-YOLOv7-tiny with CKIM
+You can train your own model using the following command:  
+```python train.py --class=<grained> --CKIM=<CKIM_type> --logs=<model_path>```    
 
-```python train.py --class=<grained> --CKIM=<CKIM_type>```
+```<grained>``` can be 'fine' or 'coarse', representing training the fine-grained-model without CKIM or coarse-grained model with CKIM, seperately.  
+```<CKIM-type>``` can be 'crisp' or 'fuzzy', means crisp-CKIM and fuzzy CKIM, respectively.  
+```<model_path>``` is the path where you wan to save your trained models.
+
 
 ## Testing
-In ```YOLO-CKIM/yolo.py```, modifying the ```model_path``` to the path of your trained model, and the ```class_path ``` to the path of your ground turth. Then, you can test your model by running ```python get_map.py --data=<data_path> --CKIM=<CKIM_type>```. ```<data_path>``` means the path to your testing data, and ```<CKIM-type>``` can be 'crisp' or 'fuzzy', representing crisp-CKIM and fuzzy CKIM, respectively. Results will be save in ```/map_out```
+In ```/YOLO-CKIM/yolo.py```, please modify the ```model_path``` to the path of the trained model you want to test, and the ```class_path ``` to the path of your ground turth. Then, you can test your model by running ```python get_map.py --data=<data_path> --CKIM=<CKIM_type>```. ```<data_path>``` means the path to your testing data, and ```<CKIM-type>``` can be 'crisp' or 'fuzzy', representing crisp-CKIM and fuzzy CKIM, respectively. Results will be save in ```/YOLO-CKIM/map_out```.
 
-Trained fine-grained model and corase-grained model can be found in ```/YOLO-CKIM/checkpoint/```
+Trained fine-grained model and corase-grained model can be found in ```/YOLO-CKIM/checkpoint/```.
 
 
 
 ## Citation
-If you find this code useful in your research then please cite
-@article{zhang2023commonsense,
-      title={Commonsense Knowledge Assisted Deep Learning for Resource-constrained and Fine-grained Object Detection}, 
-      author={Pu Zhang and Bin Liu},
-      year={2023},
-      eprint={2303.09026},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+If you find this code useful in your research then please cite  
+ @article{zhang2023commonsense,    
+      title={Commonsense Knowledge Assisted Deep Learning for Resource-constrained and Fine-grained Object Detection},   
+      author={Pu Zhang and Bin Liu},  
+      year={2023},  
+      eprint={2303.09026},  
+      archivePrefix={arXiv},  
+      primaryClass={cs.CV}  
+} 
 
 
 ## Acknowledgement
-This code is based on YOLOv4 , YOLOv7 and MobileNet3-SSD.
+This code is adapted from [YOLOv4](https://github.com/bubbliiiing/yolov4-tiny-pytorch) , [YOLOv7](https://github.com/WongKinYiu/yolov7) and [MobileNet3-SSD](https://github.com/shaoshengsong/MobileNetV3-SSD-Compact-Version).
