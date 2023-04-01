@@ -1,0 +1,2 @@
+
+Mean Average Precision (mAP): 0.643
