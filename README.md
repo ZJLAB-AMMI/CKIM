@@ -52,9 +52,9 @@ Then, you can test your model by running ```python get_map.py --data=<data_path>
 ```<data_path>``` means the path to your testing data  
 ```<CKIM-type>``` can be 'crisp' or 'fuzzy', representing crisp-CKIM and fuzzy CKIM, respectively.  
 
-Results will be save in ```/YOLO-CKIM/map_out```.
+Testing results will be save in ```/YOLO-CKIM/map_out```.
 
-Trained fine-grained model and corase-grained model can be found in ```/YOLO-CKIM/checkpoint/```.
+Trained fine-grained model and corase-grained model can be found in ```/YOLO-CKIM/checkpoint/coarse-grained/best_epoch_weights.pth```.
 
 
 
