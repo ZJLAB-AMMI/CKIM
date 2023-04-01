@@ -26,7 +26,7 @@ h5py==2.10.0
 
 ## Dataset and pre-process
 Please download the [CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/) and move image files to ```/Data```.  
-The annotations suitable for training object detection models can be found in ```/Data```.
+The annotations necessary for training object detection models can be found in ```/Data```.
 
 
 
@@ -38,6 +38,7 @@ You can derive CKIM with crisp and fuzzy implementations as follows:
 
 ## Training 
 You can train your own model using the following command:  
+
 ```python train.py --class=<grained> --CKIM=<CKIM_type> --logs=<model_path>```    
 
 ```<grained>``` can be 'fine' or 'coarse', representing training the fine-grained-model without CKIM or coarse-grained model with CKIM, seperately.  
@@ -46,15 +47,16 @@ You can train your own model using the following command:
 
 
 ## Testing
-In ```/YOLO-CKIM/yolo.py```, please modify the ```model_path``` to the path of the trained model you want to test, and the ```class_path ``` to the path of your ground turth.  
-Then, you can test your model by running ```python get_map.py --data=<data_path> --CKIM=<CKIM_type>```.  
+In ```/YOLO-CKIM/yolo.py```, please modify the ```model_path``` to the path of the trained model you want to test, and the ```class_path ``` to the path of your ground turth. Then, you can test your model by running:  
+
+```python get_map.py --data=<data_path> --CKIM=<CKIM_type>```.  
 
 ```<data_path>``` means the path to your testing data  
 ```<CKIM-type>``` can be 'crisp' or 'fuzzy', representing crisp-CKIM and fuzzy CKIM, respectively.  
 
 Testing results will be save in ```/YOLO-CKIM/map_out```.
 
-Trained fine-grained model and corase-grained model can be found in ```/YOLO-CKIM/checkpoint/coarse-grained/best_epoch_weights.pth```.
+Trained CKIM assisted YOLOv7-tiny model can be found in ```/YOLO-CKIM/checkpoint/coarse-grained/best_epoch_weights.pth```.
 
 
 
