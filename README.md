@@ -72,4 +72,4 @@ If you find this code useful in your research then please cite
 
 
 ## Acknowledgement
-This code is adapted from [YOLOv4](https://github.com/bubbliiiing/yolov4-tiny-pytorch) , [YOLOv7](https://github.com/WongKinYiu/yolov7) and [MobileNet3-SSD](https://github.com/shaoshengsong/MobileNetV3-SSD-Compact-Version).
+This code is adapted from [YOLOv4](https://github.com/bubbliiiing/yolov4-tiny-pytorch) and [YOLOv7](https://github.com/WongKinYiu/yolov7).
