@@ -52,8 +52,7 @@ In ```/YOLO-CKIM/yolo.py```, please modify the ```model_path``` to the path of t
 ```python get_map.py --data=<data_path> --CKIM=<CKIM_type>```.  
 
 ```<data_path>``` means the path to your testing data  
-```<CKIM-type>``` can be 'crisp' or 'fuzzy', representing crisp-CKIM and fuzzy CKIM, respectively.  
-
+```<CKIM-type>``` can be 'crisp' or 'fuzzy', representing crisp-CKIM and fuzzy CKIM, respectively.   
 Testing results will be save in ```/YOLO-CKIM/map_out```.
 
 Trained CKIM assisted YOLOv7-tiny model can be found in ```/YOLO-CKIM/checkpoint/coarse-grained/best_epoch_weights.pth```.
