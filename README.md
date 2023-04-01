@@ -25,8 +25,8 @@ h5py==2.10.0
 
 
 ## Dataset and pre-process
-Please download the [CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/) and move image files to ```/Data```. 
-Dataset with middle size objects can be generated following [clevr-dataset-gen](https://github.com/facebookresearch/clevr-dataset-gen)
+Please download the [CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/) and move image files to ```/Data```.   
+Dataset with middle size objects can be generated following [clevr-dataset-gen](https://github.com/facebookresearch/clevr-dataset-gen).  
 The annotations necessary for training object detection models can be found in ```/Data```.
 
 
