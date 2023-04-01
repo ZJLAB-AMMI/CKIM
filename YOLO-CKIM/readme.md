@@ -1,4 +1,4 @@
-# YOLO-CKIM
+# YOLOv7-tiny assisted with CKIM
 
 
 ## Training 
