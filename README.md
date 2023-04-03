@@ -62,14 +62,12 @@ Trained CKIM assisted YOLOv7-tiny model can be found in ```/YOLO-CKIM/checkpoint
 
 ## Citation
 If you find this code useful in your research then please cite  
- @article{zhang2023commonsense,    
-      title={Commonsense Knowledge Assisted Deep Learning for Resource-constrained and Fine-grained Object Detection},   
-      author={Pu Zhang and Bin Liu},  
-      year={2023},  
-      eprint={2303.09026},  
-      archivePrefix={arXiv},  
-      primaryClass={cs.CV}  
-} 
+@article{zhang2023commonsense,
+  title={Commonsense Knowledge Assisted Deep Learning for Resource-constrained and Fine-grained Object Detection},
+  author={Zhang, Pu and Liu, Bin},
+  journal={arXiv preprint arXiv:2303.09026},
+  year={2023}
+}
 
 
 ## Acknowledgement
