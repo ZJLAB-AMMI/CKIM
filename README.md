@@ -61,7 +61,7 @@ Trained CKIM assisted YOLOv7-tiny model can be found in ```/YOLO-CKIM/checkpoint
 
 
 ## Citation
-If you find this code useful in your research then please cite  
+If you find this code useful, please kindly cite  
 
 @article{zhang2023commonsense,
 
