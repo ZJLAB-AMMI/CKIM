@@ -1,7 +1,7 @@
 # CKIM
 This is the Python code used to implement the CKIM assisted object detectors as described in the paper:
 
-[**Commonsense Knowledge Assisted Deep Learning for Resource-constrained and Fine-grained Object Detection**  
+[**Commonsense Knowledge Assisted Deep Learning with Application to Size-Related Fine-Grained Object Detection**  
 Pu Zhang, Bin Liu](https://arxiv.org/abs/2303.09026)
 
 
